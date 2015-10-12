@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="19"
+   height="19"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4040">
+      <stop
+         id="stop4042"
+         style="stop-color:#ffffff;stop-opacity:0.73043478"
+         offset="0" />
+      <stop
+         id="stop4044"
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="9.3303576"
+       y1="1033.5229"
+       x2="9.3303576"
+       y2="1052.2288"
+       id="linearGradient2837"
+       xlink:href="#linearGradient4040"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1207393,0,0,1.1207393,-1.1470239,-1159.2765)" />
+  </defs>
+  <rect
+     width="19"
+     height="19"
+     rx="0"
+     ry="0"
+     x="0"
+     y="-1.7382812e-05"
+     id="rect4038"
+     style="color:#000000;fill:url(#linearGradient2837);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.04690576;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 5.5276006,6.5441 8.0000004,8 -8.0000004,-8 z"
+     id="rect2834-90-3"
+     style="color:#000000;fill:none;stroke:#747474;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 13.527601,6.5441 -8.0000004,8 8.0000004,-8 z"
+     id="rect2834-90-3-7"
+     style="color:#000000;fill:none;stroke:#747474;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 5.5276006,4.5441 8.0000004,8 -8.0000004,-8 z"
+     id="rect2834-90"
+     style="color:#000000;fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 13.527601,4.5441 -8.0000004,8 8.0000004,-8 z"
+     id="rect2834-90-6"
+     style="color:#000000;fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+</svg>

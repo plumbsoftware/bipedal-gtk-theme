@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg814">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs816">
+    <linearGradient
+       id="linearGradient10332-5">
+      <stop
+         id="stop10334-5"
+         style="stop-color:#d3d7cf;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop10336-29"
+         style="stop-color:#8f9985;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="260.92538"
+       y1="233.77748"
+       x2="260.92538"
+       y2="248.97633"
+       id="linearGradient8390"
+       xlink:href="#linearGradient10332-5-8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.84941206,0,0,0.84794288,-623.98415,-483.16392)" />
+    <linearGradient
+       id="linearGradient10332-5-8">
+      <stop
+         id="stop10334-5-6"
+         style="stop-color:#d3d7cf;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop10336-29-0"
+         style="stop-color:#8f9985;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="260.92538"
+       y1="233.77748"
+       x2="260.92538"
+       y2="248.97633"
+       id="linearGradient3652"
+       xlink:href="#linearGradient10332-5-8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.84941206,0,0,0.84794288,-623.98415,-483.16392)" />
+    <linearGradient
+       x1="260.92538"
+       y1="233.77748"
+       x2="260.92538"
+       y2="248.97633"
+       id="linearGradient3656"
+       xlink:href="#linearGradient10332-5-8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.84941206,0,0,0.84794288,-213.97676,-1248.2184)" />
+    <linearGradient
+       x1="1.1780448"
+       y1="1042.5258"
+       x2="15.97847"
+       y2="1042.5258"
+       id="linearGradient3673"
+       xlink:href="#linearGradient10332-5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="260.92538"
+       y1="233.77748"
+       x2="260.92538"
+       y2="248.97633"
+       id="linearGradient3688"
+       xlink:href="#linearGradient10332-5-8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.84941206,0,0,-0.84794288,-213.97676,211.8562)" />
+  </defs>
+  <g
+     transform="translate(0,-1036.3622)"
+     id="layer1">
+    <path
+       d="M 13.65625,0.03125 C 13.550013,0.0511375 13.458738,0.10545 13.375,0.1875 l -2.25,2.21875 c -0.334039,-0.2252426 -0.752268,-0.375 -1.1875,-0.375 l -7.8125,0 C 0.96438137,2.03125 0,2.9644 0,4.125 l 0,7.8125 c 0,1.1606 0.96438137,2.09375 2.125,2.09375 l 7.8125,0 c 1.160619,10e-5 2.09375,-0.93315 2.09375,-2.09375 l 0,-5.53125 3.78125,-3.71875 c 0.223308,-0.2193 0.219324,-0.5893 0,-0.8125 L 14.15625,0.1875 C 14.10141,0.1315 14.036498,0.0904 13.96875,0.0625 13.867129,0.02 13.762487,0.0113625 13.65625,0.03125 z m -11.53125,3 7.8125,0 c 0.155979,0 0.305715,0.039948 0.4375,0.09375 L 6.21875,7.1875 4,3.96875 C 3.7806365,3.74545 3.4108053,3.7193 3.1875,3.9375 L 1.34375,5.25 c -0.2233041,0.2194 -0.2193114,0.55775 0,0.78125 0,0 4.0255981,6.08845 4.03125,6.09375 0.051403,0.053 0.1245105,0.097 0.1875,0.125 0.2057617,0.092 0.454032,0.0423 0.625,-0.125 l 4.84375,-4.75 0,4.5625 c 0,0.6239 -0.469834,1.09375 -1.09375,1.09375 l -7.8125,0 C 1.5010841,13.03125 1,12.5614 1,11.9375 L 1,4.125 C 1,3.5011 1.5010841,3.03125 2.125,3.03125 z"
+       transform="translate(0,1036.3622)"
+       id="rect16897"
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:0.5;color:#000000;fill:url(#linearGradient3688);fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Charter;-inkscape-font-specification:Bitstream Charter" />
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="8"
+   height="3"
+   id="svg32934">
+  <metadata
+     id="metadata3206">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs32936">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3644" />
+    <linearGradient
+       id="linearGradient3758-6">
+      <stop
+         id="stop3760-7"
+         style="stop-color:#000000;stop-opacity:0.39215687"
+         offset="0" />
+      <stop
+         id="stop3762-2"
+         style="stop-color:#000000;stop-opacity:0.33333334"
+         offset="1" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3644-7" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3644-3" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3644-5" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3644-9" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3644-33" />
+    <linearGradient
+       x1="-0.021779841"
+       y1="14.5"
+       x2="0.97822016"
+       y2="14.5"
+       id="linearGradient3721"
+       xlink:href="#linearGradient3758-6"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0009017,0,0,0.98652694,0.0181928,0.1953593)" />
+    <linearGradient
+       x1="3.1902134"
+       y1="14.5"
+       x2="4.1902137"
+       y2="14.5"
+       id="linearGradient3729"
+       xlink:href="#linearGradient3758-6"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0009017,0,0,0.98652694,-0.1939917,0.1953593)" />
+    <linearGradient
+       x1="6.1954174"
+       y1="14.5"
+       x2="7.1954174"
+       y2="14.5"
+       id="linearGradient3731"
+       xlink:href="#linearGradient3758-6"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0009017,0,0,0.98652694,-0.19920019,0.1953593)" />
+  </defs>
+  <g
+     transform="translate(0,-13)"
+     id="layer1">
+    <path
+       d="m 0.49684416,13.496844 0,2.006312"
+       id="path3642"
+       style="fill:none;stroke:url(#linearGradient3721);stroke-width:0.99368829;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 1.4977458,13.496844 0,2.006312"
+       id="path3642-8"
+       style="opacity:0.053;fill:#ffffff;stroke:#ffffff;stroke-width:0.99368829;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 3.4995492,13.496844 0,2.006312"
+       id="path3642-9"
+       style="fill:none;stroke:url(#linearGradient3729);stroke-width:0.99368829;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 4.5004508,13.496844 0,2.006312"
+       id="path3642-0"
+       style="opacity:0.053;fill:#ffffff;stroke:#ffffff;stroke-width:0.99368829;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 6.5022542,13.496844 0,2.006312"
+       id="path3642-1"
+       style="fill:none;stroke:url(#linearGradient3731);stroke-width:0.99368829;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 7.5031558,13.496844 0,2.006312"
+       id="path3642-17"
+       style="opacity:0.053;fill:#ffffff;stroke:#ffffff;stroke-width:0.99368829;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+</svg>

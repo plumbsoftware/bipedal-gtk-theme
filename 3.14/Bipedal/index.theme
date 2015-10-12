@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Bipedal
+Comment=A integrated GTK 2.0 and >3.12 theme based on the Murrine engine.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Bipedal
+MetacityTheme=Bipedal
+IconTheme=default
+CursorTheme=default

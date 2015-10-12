@@ -1,0 +1,942 @@
+# GTK2 Theme a la GNOME3
+
+gtk-color-scheme = "base_color:#d4d4d4\nbg_color:#c2c2c2\ntooltip_bg_color:#212526\nselected_bg_color:#69748A\ntext_color:#000000\nfg_color:#000000\ntooltip_fg_color:#ffffff\nselected_fg_color:#ffffff"
+
+gtk-icon-sizes = "gtk-button=16,16:\ngtk-dnd=16,16:\npanel=16,16:\ngtk-small-toolbar=16,16:\ngtk-large-toolbar=24,24:"
+
+gtk-button-images = 0
+gtk-auto-mnemonics = 1
+gtk-menu-popup-delay = 100
+
+style "murrine-default" {
+	GtkButton	::child-displacement-x		= 0
+	GtkButton	::child-displacement-y		= 1
+	GtkButton	::default-border		= { 0, 0, 0, 0 }
+	GtkCheckButton	::indicator-size		= 15
+	
+	GtkWidget	::new-tooltip-style		= 1
+	GtkWidget	::focus-line-width		= 1
+	GtkWidget	::focus-padding			= 0 # Keeping this at 0 prevents the Firefox tabs from jumping a few pixels when you create a new tab. Set the value locally if needed.
+
+	GtkImage	::x-ayatana-indicator-dynamic	= 1
+
+	GtkScrollbar	::has-backward-stepper		= 0  
+	GtkScrollbar	::has-forward-stepper		= 0
+	GtkScrollbar	::min-slider-length		= 31
+	GtkScrollbar	::slider-width			= 7
+	GtkScrollbar	::trough-border			= 3
+	GtkScrollbar	::activate-slider		= 0
+
+	GtkScrolledWindow ::scrollbar-spacing		= 0
+	GtkScrolledWindow ::scrollbars-within-bevel	= 1
+
+	GtkPaned	::handle-size			= 3
+
+	GtkRange	::trough-border			= 0
+	GtkRange	::slider-width			= 15
+	GtkRange	::stepper-size			= 0
+	GtkRange	::stepper_spacing		= 0
+	GtkRange	::trough-under-steppers		= 0
+
+    GtkScale::slider-length	= 15
+    GtkScale::slider-width = 15
+    GtkScale::trough-side-details = 1
+
+	GtkMenuBar	::internal-padding		= 0
+	GtkExpander	::expander-size			= 11
+	GtkToolbar	::internal-padding		= 2
+	GtkTreeView	::expander-size			= 11
+	GtkTreeView	::indent-expanders		= 1
+	GtkTreeView	::vertical-separator		= 1
+	GtkNotebook	::tab-overlap			= 3
+
+	GtkMenu		::horizontal-padding		= 2
+	GtkMenu		::vertical-padding		= 2
+
+	WnckTasklist	::fade-overlay-rect		= 0
+	# The following line hints to gecko (and possibly other appliations)
+	# that the entry should be drawn transparently on the canvas.
+	# Without this, gecko will fill in the background of the entry.
+	GtkEntry	::honors-transparent-bg-hint	= 1
+	GtkEntry	::state-hint			= 0
+	GtkEntry	::progress-border		= { 2, 2, 2, 2 }
+
+	GtkProgressBar	::min-horizontal-bar-height	= 16
+	GtkProgressBar	::min-vertical-bar-width	= 16
+	
+	GtkToolbar	::shadow-type = GTK_SHADOW_NONE # Makes toolbars flat and unified.
+	GtkMenuBar	::shadow-type = GTK_SHADOW_NONE # Makes menus flat and unified.
+	GtkMenuBar	::window-dragging		= 1
+
+	# The little ugly gripper at the bottom right needs to go. Loss of usability for the
+	# sake of a more good-looking theme. You can remove this if you don't use Ubuntu 11.04.
+	GtkWindow	::resize-grip-height		= 0
+	GtkWindow	::resize-grip-width		= 0
+
+
+  xthickness = 1
+  ythickness = 1
+
+  fg[NORMAL]        = @fg_color
+  fg[PRELIGHT]      = @fg_color
+  fg[SELECTED]      = @selected_fg_color
+  fg[ACTIVE]        = @fg_color
+  fg[INSENSITIVE]   = darker (@bg_color)
+
+  bg[NORMAL]        = @bg_color
+  bg[PRELIGHT]      = shade (1.02, @bg_color)
+  bg[SELECTED]      = @selected_bg_color
+  bg[INSENSITIVE]   = @bg_color
+  bg[ACTIVE]        = shade (.9, @bg_color)
+
+  base[NORMAL]      = @base_color
+  base[PRELIGHT]    = shade (.95, @bg_color)
+  base[ACTIVE]      = shade (.9, @selected_bg_color)
+  base[SELECTED]    = @selected_bg_color
+  base[INSENSITIVE] = @bg_color
+
+  text[NORMAL]      = @text_color
+  text[PRELIGHT]    = @text_color
+  text[ACTIVE]      = @selected_fg_color
+  text[SELECTED]    = @selected_fg_color
+  text[INSENSITIVE] = darker (@bg_color)
+
+  engine "murrine" {
+    animation           = FALSE
+    colorize_scrollbar  = FALSE
+    comboboxstyle       = 2      # not colored combobox below the arrow
+    contrast            = 1.1    # .8 for less contrast, more than 1.0 for more
+                                 # contrast on borders
+    expanderstyle       = 2      # buttons with plus and minus
+    focusstyle          = 1      # colored rectangle touching the borders
+    glazestyle          = 0      # 0 = flat highlight, 1 = curved highlight,
+                                 # 2 = concave style, 3 = top curved highlight,
+                                 # 4 = beryl highlight
+    gradient_shades     = { 1.01, 1.0, 1.0, .99 }
+    highlight_shade     = 1.0    # set highlight amount for buttons or widgets
+    lightborder_shade   = 1.0    # sets lightborder amount for buttons or widgets
+    lightborderstyle    = 0      # 0 = lightborder on top side, 1 = lightborder
+                                 # on all sides
+    listviewheaderstyle = 2      # 0 = flat, 1 = glassy, 2 = raised
+    listviewstyle       = 1      # 0 = nothing, 1 = dotted
+    menubaritemstyle    = 1      # 0 = menuitem look, 1 = button look
+    menubarstyle        = 0      # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+    menuitemstyle       = 0      # 0 = flat, 1 = glassy, 2 = striped
+    menustyle           = 0      # 0 = no vertical menu stripe, 1 = display
+                                 # vertical menu stripe
+    progressbarstyle    = 1      # 0 = flat, 1 = stripped, 2 = blocks
+    reliefstyle		    = 0      # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
+    rgba                = FALSE  # FALSE = disabled, TRUE = enabled
+    roundness           = 2      # 0 = squared, 1 = old default, more will
+                                 # increase roundness
+    scrollbarstyle      = 0      # 0 = nothing, 1 = circles, 2 = handles,
+                                 # 3 = diagonal stripes, 4 = diagonal stripes
+                                 # and handles, 5 = horizontal stripes,
+                                 # 6 = horizontal stripes and handles
+    sliderstyle         = 0      # 0 = nothing added, 1 = handles
+    stepperstyle        = 1      # 0 = standard, 1 = integrated stepper handles,
+                                 # 2 = unknown
+    toolbarstyle        = 0      # 0 = flat, 1 = glassy, 2 = gradient
+	}
+}
+
+style "murrine-nogap" {
+  xthickness   = 0
+  ythickness   = 0
+}
+
+style "murrine-wide" {
+  xthickness   = 2
+  ythickness   = 2
+}
+
+style "murrine-wider" {
+  xthickness   = 3
+  ythickness   = 3
+}
+
+
+# Buttons
+style "murrine-button" = "murrine-wider" {
+  bg[PRELIGHT] = shade (1.05, @bg_color)
+
+  engine "murrine" {
+		gradient_shades = {1.05, .99, .99, .93}
+        contrast        = .99
+	    lightborder_shade   = 1.2    # sets lightborder amount for buttons or widgets
+	}
+
+}
+
+style "murrine-entry" = "murrine-wider" {
+  bg[SELECTED] = mix (.4, @selected_bg_color, @base_color)
+  fg[SELECTED] = @text_color
+
+  engine "murrine" {
+    contrast      = .7
+  }
+}
+
+style "murrine-notebook-bg" = "murrine-wider" {
+  bg[NORMAL]   = @base_color
+  bg[ACTIVE]   = shade (.95, @bg_color)
+}
+
+style "murrine-notebook" = "murrine-notebook-bg" {
+    engine "murrine"
+    {
+        focusstyle = 0
+    }
+}
+
+style "murrine-panel" {
+}
+
+style "murrine-menubar-menuitem" = "murrine-wider" {
+
+    fg[PRELIGHT]   = @selected_fg_color
+    text[PRELIGHT] = @selected_fg_color
+    bg[PRELIGHT]   = @selected_bg_color
+    bg[SELECTED]   = @selected_bg_color
+
+  engine "murrine" {
+    contrast = 1.0
+  }
+}
+
+# Menu
+style "murrine-menu" = "murrine-nogap" {
+  bg[NORMAL] = @base_color # menu background
+  text[PRELIGHT] = @base_color
+  fg[PRELIGHT] = @selected_fg_color # selected item color
+
+  GtkMenuItem::arrow-scaling = .5 # small arrow
+
+  engine "murrine" {
+    roundness  = 0 # Radius of the menu items (inside menus)
+    contrast   = 1.1 # flat
+  }
+}
+
+style "murrine-menu-item" {
+  xthickness   = 3
+  ythickness   = 5
+}
+
+style "murrine-menuitem-separator" = "murrine-wide" {
+  engine "murrine" {
+    contrast   = .5
+  }
+}
+
+# Treeview
+style "murrine-treeview" {
+  bg[NORMAL] = @base_color
+
+  engine "murrine" {
+    contrast = .6
+    roundness = 1 # The radius for progress bars insied treeview.
+  }
+}
+
+# Based on the default style so that the colors from the button
+# style are overriden again.
+style "murrine-treeview-header" = "murrine-wider" {
+    xthickness = 3
+    ythickness = 1
+    
+    bg[NORMAL] = @base_color
+    
+    engine "murrine"
+    {
+        arrowstyle = 1
+        border_shades = {0.85, 0.75}
+        contrast = 0.6
+        focusstyle = 0
+        highlight_shade = 1.0
+        lightborder_shade = 0.2
+        lightborderstyle = 0
+        gradient_shades = {1.1, 1.1, 0.94, 0.94}
+    }
+
+}
+
+style "murrine-frame-title" {
+  fg[NORMAL]   = lighter (@fg_color)
+}
+
+# Tooltip
+style "murrine-tooltips" = "murrine-wider" {
+    bg[NORMAL] = "#343434"
+    fg[NORMAL] = "#ffffff"
+    bg[SELECTED] = "#343434"
+}
+
+# Progressbar
+style "murrine-progressbar" = "murrine-nogap" {
+
+  fg[PRELIGHT] = @selected_fg_color
+
+  engine "murrine" {
+    # Explicitly set the radius, for progress
+    # bars inside menuitems
+    roundness  = 1
+  }
+}
+
+style "murrine-statusbar" = "murrine-wider" {
+}
+
+style "murrine-comboboxentry" = "murrine-wider" {
+}
+style "arrow" {
+
+    engine "pixmap" 
+    {
+        # Arrows
+        
+        image 
+        {
+            function = ARROW
+            state = NORMAL
+            overlay_file = "assets/small-arrow-up.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = UP
+        }
+        image 
+        {
+            function = ARROW
+            state = PRELIGHT
+            overlay_file = "assets/small-arrow-up.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = UP
+        }
+        image 
+        {
+            function = ARROW
+            state = ACTIVE
+            overlay_file = "assets/small-arrow-up.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = UP
+        }
+        image 
+        {
+            function = ARROW
+            state = INSENSITIVE
+            overlay_file = "assets/small-arrow-up-insensitive.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = UP
+        }
+        image 
+        {
+            function = ARROW
+            state = NORMAL
+            overlay_file = "assets/small-arrow-down.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = DOWN
+        }
+        image 
+        {
+            function = ARROW
+            state = PRELIGHT
+            overlay_file = "assets/small-arrow-down.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = DOWN
+        }
+        image 
+        {
+            function = ARROW
+            state = ACTIVE
+            overlay_file = "assets/small-arrow-down.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = DOWN
+        }
+        image 
+        {
+            function = ARROW
+            state = INSENSITIVE
+            overlay_file = "assets/small-arrow-down-insensitive.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = DOWN
+        }
+        image 
+        {
+            function = ARROW
+            state = NORMAL
+            overlay_file = "assets/arrow-left.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = LEFT
+        }
+        image 
+        {
+            function = ARROW
+            state = PRELIGHT
+            overlay_file = "assets/arrow-left.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = LEFT
+        }
+        image 
+        {
+            function = ARROW
+            state = ACTIVE
+            overlay_file = "assets/arrow-left.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = LEFT
+        }
+        image 
+        {
+            function = ARROW
+            state = INSENSITIVE
+            overlay_file = "assets/arrow-left-insensitive.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = LEFT
+        }
+        image 
+        {
+            function = ARROW
+            state = NORMAL
+            overlay_file = "assets/arrow-right.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = RIGHT
+        }
+        image 
+        {
+            function = ARROW
+            state = PRELIGHT
+            overlay_file = "assets/arrow-right.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = RIGHT
+        }
+        image 
+        {
+            function = ARROW
+            state = ACTIVE
+            overlay_file = "assets/arrow-right.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = RIGHT
+        }
+        image 
+        {
+            function = ARROW
+            state = INSENSITIVE
+            overlay_file = "assets/arrow-right-insensitive.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+            arrow_direction = RIGHT
+        }
+        image 
+        {
+            function = TAB
+            state = INSENSITIVE
+            overlay_file = "assets/small-arrow-down-insensitive.svg"
+            overlay_stretch = FALSE
+        }
+        image 
+        {
+            function = TAB
+            state = NORMAL
+            overlay_file = "assets/small-arrow-down.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+        }
+        image 
+        {
+            function = TAB
+            state = PRELIGHT
+            overlay_file = "assets/small-arrow-down.svg"
+            overlay_border = {0, 0, 0, 0}
+            overlay_stretch = FALSE
+        }
+        
+        # Expanders
+        
+        image 
+        {
+            function = EXPANDER
+            expander_style = COLLAPSED
+            file = "assets/closed.svg"
+        }
+        image 
+        {
+            function = EXPANDER
+            expander_style = EXPANDED
+            file = "assets/open.svg"
+        }
+        image 
+        {
+            function = EXPANDER
+            expander_style = SEMI_EXPANDED
+            file = "assets/open.svg"
+        }
+        image 
+        {
+            function = EXPANDER
+            expander_style = SEMI_COLLAPSED
+            file = "assets/closed.svg"
+        }
+	}
+}
+style "expander" {
+
+    engine "pixmap" 
+    {
+        # Expanders
+        
+        image 
+        {
+            function = EXPANDER
+            expander_style = COLLAPSED
+            file = "assets/closed.svg"
+        }
+        image 
+        {
+            function = EXPANDER
+            expander_style = EXPANDED
+            file = "assets/open.svg"
+        }
+        image 
+        {
+            function = EXPANDER
+            expander_style = SEMI_EXPANDED
+            file = "assets/open.svg"
+        }
+        image 
+        {
+            function = EXPANDER
+            expander_style = SEMI_COLLAPSED
+            file = "assets/closed.svg"
+        }
+	}
+}
+
+style "murrine-spinbutton" {
+}
+
+# Slider
+style "murrine-scale" {
+    bg[NORMAL] = shade (1.3, @bg_color) 
+    bg[PRELIGHT] = shade (1.10, @bg_color)  
+    bg[ACTIVE] = shade (0.9, @bg_color)
+    bg[SELECTED] = shade (1.0, @selected_bg_color)  
+    bg[INSENSITIVE] = shade (0.95, @bg_color)
+    
+    engine "murrine" 
+    {
+        focusstyle = 0
+        glowstyle = 4
+    gradient_shades = {1.5, 1.1, 1.1, .9}
+        contrast = 1.0
+        highlight_shade = 1.05
+        lightborderstyle = 1
+        border_shades = {1.0, 0.75}
+        reliefstyle = 3
+        roundness = 7
+        trough_shades = {0.9, 1.1}
+        #trough_border_shades = {1.20, 1.20}
+    }
+}
+
+# Scrollbar
+style "murrine-scrollbar" = "murrine-nogap" {
+  bg[NORMAL]	= shade (.65, @bg_color)
+  bg[PRELIGHT]	= shade (.45, @bg_color)
+
+  engine "murrine" {
+	contrast = .0
+	roundness  = 15
+  }
+}
+
+style "murrine-hscale" {
+}
+
+style "murrine-vscale" {
+}
+
+style "murrine-xbutton-label" {
+  engine "murrine" {
+	contrast = .5
+  }
+}
+
+# Check buttons pixmap style
+style "checkbutton" {
+	engine "pixmap" {
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = NORMAL
+			shadow = OUT
+			overlay_file = "assets/checkbox-unchecked.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = PRELIGHT
+			shadow = OUT
+			overlay_file = "assets/checkbox-unchecked.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = ACTIVE
+			shadow = OUT
+			overlay_file = "assets/checkbox-unchecked.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = INSENSITIVE
+			shadow = OUT
+			overlay_file = "assets/checkbox-unchecked-insensitive.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = NORMAL
+			shadow = IN
+			overlay_file = "assets/checkbox-checked.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = PRELIGHT
+			shadow = IN
+			overlay_file = "assets/checkbox-checked.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = ACTIVE
+			shadow = IN
+			overlay_file = "assets/checkbox-checked.svg"
+			overlay_stretch = FALSE
+		}
+
+
+		image {
+			function = CHECK
+			recolorable = TRUE
+			state = INSENSITIVE
+			shadow = IN
+			overlay_file = "assets/checkbox-checked-insensitive.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = FLAT_BOX
+			recolorable = TRUE
+			stretch = TRUE
+			file = "assets/null.png"
+			border = {2, 2, 2, 2}
+		}
+
+#Fix buttons
+		image
+		{
+			function		= FOCUS
+			recolorable		= TRUE
+			file			= "assets/button-focus.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			recolorable		= TRUE
+			detail			= "buttondefault"
+			file			= "assets/null.png"
+			border			= { 0, 0, 0, 0}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= NORMAL
+			recolorable		= TRUE
+			file			= "assets/button-normal.svg"
+			border			={ 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			recolorable		= TRUE
+			state			= PRELIGHT
+			shadow			= OUT
+			file			= "assets/button-prelight.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			recolorable		= TRUE
+			state			= PRELIGHT
+			shadow			= IN
+			file			= "assets/button-pressed-prelight.svg"
+			border			= { 9, 9, 7, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= INSENSITIVE
+			shadow			= OUT
+			file			= "assets/button-inactive.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= INSENSITIVE
+			shadow			= IN
+			file			= "assets/button-inactive.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= ACTIVE
+			file			= "assets/button-pressed.svg"
+			border			= { 9, 9, 7, 9}
+			stretch			= TRUE
+		}
+
+	}
+}
+
+style "radiobutton" {
+	engine "pixmap" {
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = NORMAL
+			shadow = OUT
+			overlay_file = "assets/radio-unselected.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = PRELIGHT
+			shadow = OUT
+			overlay_file = "assets/radio-unselected.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = ACTIVE
+			shadow = OUT
+			overlay_file = "assets/radio-unselected.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = INSENSITIVE
+			shadow = OUT
+			overlay_file = "assets/radio-unselected-insensitive.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = NORMAL
+			shadow = IN
+			overlay_file = "assets/radio-selected.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = PRELIGHT
+			shadow = IN
+			overlay_file = "assets/radio-selected.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = ACTIVE
+			shadow = IN
+			overlay_file = "assets/radio-selected.svg"
+			overlay_stretch = FALSE
+		}
+
+
+		image {
+			function = OPTION
+			recolorable = TRUE
+			state = INSENSITIVE
+			shadow = IN
+			overlay_file = "assets/radio-selected-insensitive.svg"
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = FLAT_BOX
+			recolorable = TRUE
+			stretch = TRUE
+			file = "assets/null.png"
+			border = {2, 2, 2, 2}
+		}
+
+#Fix buttons
+		image
+		{
+			function		= FOCUS
+			recolorable		= TRUE
+			file			= "assets/button-focus.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			recolorable		= TRUE
+			detail			= "buttondefault"
+			file			= "assets/null.png"
+			border			= { 0, 0, 0, 0}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= NORMAL
+			recolorable		= TRUE
+			file			= "assets/button-normal.svg"
+			border			={ 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			recolorable		= TRUE
+			state			= PRELIGHT
+			shadow			= OUT
+			file			= "assets/button-prelight.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			recolorable		= TRUE
+			state			= PRELIGHT
+			shadow			= IN
+			file			= "assets/button-pressed-prelight.svg"
+			border			= { 9, 9, 7, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= INSENSITIVE
+			shadow			= OUT
+			file			= "assets/button-inactive.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= INSENSITIVE
+			shadow			= IN
+			file			= "assets/button-inactive.svg"
+			border			= { 9, 9, 6, 9}
+			stretch			= TRUE
+		}
+		image
+		{
+			function		= BOX
+			state			= ACTIVE
+			file			= "assets/button-pressed.svg"
+			border			= { 9, 9, 7, 9}
+			stretch			= TRUE
+		}
+	}
+}
+
+# Matches
+class "GtkWidget"                              style "murrine-default"
+class "GtkToolbar"                             style "murrine-default"
+class "GtkRange"                               style "murrine-wide"
+class "GtkFrame"                               style "murrine-wide"
+class "GtkSeparator"                           style "murrine-wide"
+class "GtkEntry"                               style "murrine-entry"
+class "GtkSpinButton"                          style "murrine-spinbutton"
+class "GtkScale"                               style "murrine-scale"
+class "GtkVScale"                              style "murrine-vscale"
+class "GtkHScale"                              style "murrine-hscale"
+class "GtkScrollbar"                           style "murrine-scrollbar"
+class "GtkVScrollbar"                          style "murrine-scrollbar"
+class "GtkHScrollbar"                          style "murrine-scrollbar"
+widget "*PanelWidget*"                         style "murrine-panel"
+widget "*PanelApplet*"                         style "murrine-panel"
+widget "*fast-user-switch*"                    style "murrine-panel"
+class  "PanelApp*"                             style "murrine-panel"
+class  "PanelToplevel*"                        style "murrine-panel"
+class "GtkTreeView"                			   style "expander"
+widget_class "*<GtkNotebook>*<GtkEventBox>"    style "murrine-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "murrine-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkLayout>"      style "murrine-notebook-bg"
+widget_class "*<GtkButton>"                    style "murrine-button"
+widget_class "*<GtkNotebook>"                  style "murrine-notebook"
+widget_class "*<GtkStatusbar>*"                style: highest "murrine-statusbar"
+widget_class "*<GtkComboBoxEntry>*"            style "murrine-comboboxentry"
+widget_class "*<GtkCombo>*"                    style "murrine-comboboxentry"
+widget_class "*<GtkMenu>*"                     style "murrine-menu"
+widget_class "*<GtkMenuItem>*"                 style "murrine-menu-item"
+widget_class "*<GtkSeparatorMenuItem>*"        style "murrine-menuitem-separator"
+widget_class "*<GtkMenuBar>*"                  style "murrine-menubar-menuitem"
+widget_class "*.<GtkFrame>.<GtkLabel>"         style "murrine-frame-title"
+widget_class "*.<GtkTreeView>.*"     		   style "murrine-treeview"
+widget_class "*<GtkProgressBar>"               style "murrine-progressbar"
+widget_class "*<GtkCheckButton>*"              style:highest "checkbutton"
+widget_class "*<GtkRadioButton>*"              style:highest "radiobutton"
+widget_class "*<GtkCheckButton>.<GtkLabel>"    style:highest "murrine-xbutton-label"
+widget_class "*<GtkRadioButton>.<GtkLabel>"    style:highest "murrine-xbutton-label"
+widget_class "*.<GtkTreeView>.<GtkButton>"     style "murrine-treeview-header"
+widget_class "*.<GtkCTree>.<GtkButton>"        style "murrine-treeview-header"
+widget_class "*.<GtkList>.<GtkButton>"         style "murrine-treeview-header"
+widget_class "*.<GtkCList>.<GtkButton>"        style "murrine-treeview-header"
+widget "gtk-tooltip*"                          style "murrine-tooltips"
+class "GtkArrow"                               style "arrow"
+class "GtkExpander"    						   style "expander"

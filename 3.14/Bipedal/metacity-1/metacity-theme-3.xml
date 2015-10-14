@@ -128,7 +128,7 @@
 
 <draw_ops name="titlebar_fill_unfocused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="blend/gtk:bg[NORMAL]/#ffffff/0.25" />
+		<color value="blend/gtk:bg[NORMAL]/#ffffff/0.20" />
 		<color value="gtk:bg[NORMAL]"/>
 	</gradient>
 </draw_ops>
@@ -138,7 +138,7 @@
 </draw_ops>
 
 <draw_ops name="hilight">
-	<line x1="0" y1="1" x2="width-1" y2="1" color="blend/gtk:bg[NORMAL]/#ffffff/0.7" />
+	<line x1="0" y1="1" x2="width-1" y2="1" color="blend/gtk:bg[NORMAL]/#ffffff/0.5" />
 	<gradient type="vertical" x="1" y="1" width="1" height="height-4">
 		<color value="blend/gtk:bg[NORMAL]/#ffffff/0.4" />
 		<color value="blend/gtk:bg[NORMAL]/#000000/0.03" />

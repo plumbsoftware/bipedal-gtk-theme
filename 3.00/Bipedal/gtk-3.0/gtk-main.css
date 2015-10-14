@@ -28,7 +28,7 @@
 @define-color button_hover_bg_b shade(@theme_bg_color, 0.95);
 
 @define-color button_hover_raised_bg_a shade(@theme_bg_color, 1.1);
-@define-color button_hover_raised_bg_b shade(@theme_bg_color, 1.1);
+@define-color button_hover_raised_bg_b shade(@theme_bg_color, 0.95);
 
 @define-color button_active_bg_a shade(@theme_bg_color, 0.93);
 @define-color button_active_bg_b shade(@theme_bg_color, 0.91);
@@ -113,8 +113,8 @@
 @define-color iconview_selected_a shade(@theme_selected_bg_color, 0.9);
 @define-color iconview_selected_b shade(@theme_selected_bg_color, 1.1);
 
-@define-color floating_bar_a shade(@theme_bg_color, 1.2);
-@define-color floating_bar_b shade(@theme_bg_color, 0.9);
+@define-color floating_bar_a shade(@theme_bg_color, 1.05);
+@define-color floating_bar_b shade(@theme_bg_color, 0.92);
 @define-color sidebar_bg shade(@theme_base_color, 0.95);
 
 @import url("gtk-main-common.css");

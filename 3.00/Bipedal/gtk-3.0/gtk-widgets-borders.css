@@ -22,7 +22,6 @@
                 inset 0 -1px alpha(@button_border, 0.06);
 }
 
-
 .button:insensitive,
 .inline-toolbar.toolbar .button:insensitive {
     border-color: alpha(@button_border, 0.7);
@@ -171,7 +170,6 @@ GtkComboBox.combobox-entry .button {
 /************
  * notebook *
  ************/
-
 
 
 /*********

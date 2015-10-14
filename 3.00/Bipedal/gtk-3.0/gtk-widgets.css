@@ -4,6 +4,7 @@
 /* default */
 * {
     engine: none;
+    padding: 0;
 
     background-clip: padding-box;
     background-origin: border-box;
@@ -11,10 +12,11 @@
     -GtkArrow-arrow-scaling: 0.6;
 
     -GtkButton-child-displacement-x: 0;
-    -GtkButton-child-displacement-y: 1;
-    -GtkButtonBox-child-min-height: 25;
+    -GtkButton-child-displacement-y: 0;
+    -GtkButton-image-spacing: 6;
     
     -GtkCheckButton-indicator-size: 16;
+    -GtkDialog-button-spacing: 6;
     -GtkCheckMenuItem-indicator-size: 12;
     
     -GtkExpander-expander-size: 14;
@@ -104,53 +106,66 @@ GtkAssistant .sidebar {
  * button *
  **********/
 
-.button {
-    -GtkButton-image-spacing: 4;
-    -GtkButton-interior-focus: true;
-    -GtkButton-default-border: 0;
-    -GtkButton-inner-border: 3;
-}
-
 .button,
 .button.menuitem.menubar {
     padding: 2px 5px;
 }
 
-.button.default {
-    padding: 2px 5px;
+.button.image-button {
+    padding: 4px;
 }
 
+.button.text-button {
+    padding: 2px 16px;
+}
 
-GtkColorButton.button {
-    padding: 2px;
+.header-bar .button,
+.header-bar .button.image-button,
+.header-bar.titlebar GtkMenuButton.button.titlebutton {
+    padding: 5px;
+}
+
+.titlebar .titlebutton {
+    padding: 5px;
+}
+
+.header-bar .button.text-button {
+    padding: 5px 16px;
+}
+
+.primary-toolbar .button {
+    padding: 3px;
+}
+
+.primary-toolbar .button.image-button,
+.path-bar .button.image-button {
+    padding: 5px;
+}
+
+.primary-toolbar .button.text-button,
+.path-bar .button {
+    padding: 5px 16px;
+}
+
+.stack-switcher > .button.text-button {
+      padding: 5px 10px 5px; 
 }
 
 GtkComboBox .button {
     padding: 2px 4px;
 }
 
-.toolbar .button {
+.inline-toolbar GtkToolButton > .button,
+.inline-toolbar .button.image-button {
     padding: 2px;
+}
+
+.toolbar .button {
+    padding: 1px;
 }
 
 .toolbar .button.text-button {
     padding: 3px 11px;
-}
-
-.toolbar .button.image-button {
-    padding: 2px;
-}
-
-.button.image-button {
-    padding: 2px;
-}
-
-.primary-toolbar.toolbar .button.image-button {
-    padding: 2px;
-}
-
-.inline-toolbar .button.image-button {
-    padding: 2px;
 }
 
 .button {
@@ -168,6 +183,7 @@ GtkComboBox .button {
 
 GtkLinkButton.button,
 GtkLinkButton.button:active {
+    color: @link_color;
     text-shadow: none;
 }
 
@@ -742,6 +758,11 @@ GtkViewport.frame {
 .frame.flat,
 GtkScrolledWindow GtkViewport.frame {
     border: none;
+}
+
+.frame.action-bar {
+    padding: 4px;
+    border-width: 1px 0 0;
 }
 
 /************
@@ -1945,7 +1966,7 @@ GtkStackSwitcher .button:active {
 
 GtkStatusbar {
     -GtkStatusbar-shadow-type: none;
-
+    border-color:transparent;
     padding: 1px;
     color: @theme_fg_color;
 }
@@ -2112,6 +2133,10 @@ GtkTreeView row:nth-child(even) {
 
 GtkViewport {
     background-color: @theme_bg_color;
+}
+
+GtkViewport .view {
+    background-color: transparent;
 }
 
 .view {

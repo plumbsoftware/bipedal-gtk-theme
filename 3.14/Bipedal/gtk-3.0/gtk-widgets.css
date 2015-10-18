@@ -793,7 +793,7 @@ GtkScrolledWindow GtkViewport.frame {
 .header-bar {
     padding: 6px 8px 6px 8px;
     border-style: none;
-    background-color: solid;
+    background-color: transparent;
 }
  
 .titlebar {
@@ -1166,6 +1166,7 @@ GtkTreeMenu .menuitem,
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.5;
     color: @menu_fg;
+    background-color: @menu_bg;
 }
 
 GtkTreeMenu .menuitem {

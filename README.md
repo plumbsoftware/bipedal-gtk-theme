@@ -3,7 +3,7 @@
 ## Description
 
 A GTK theme that attempts to unify the look of GTK
-environments running a mix GTK2 and GTK3 applications (most
+environments running a mix of GTK2 and GTK3 applications (most
 current GTK based desktops).
 
 ## Attributes
@@ -19,7 +19,6 @@ current GTK based desktops).
 
 ## Requirements
 
-GTK3: (libgtk-3-0 between 3.00 and 3.12).
 GTK2 requires [Murrine theme engine][3].
 
 [3]: http://gnome-look.org/content/show.php?content=42755
@@ -35,11 +34,15 @@ Most Linux distributions will already have the above packages installed.
 
 ## Installation
 
-User: Copy Bipedal folder to ~/.themes.
+User: Extract Bipedal folder to ~/.themes.
 
-Superuser: Copy Bipedal folder to /usr/share/themes.
+    tar -jxvf ~/Downloads/Bipedal.tar.bz2 -C ~/.themes
 
-Thereafter Bipedal should appear in your preferred theme selector dialogue.  
+Superuser: Extract Bipedal folder to /usr/share/themes.
+
+    sudo tar -jxvf ~/Downloads/Bipedal.tar.bz2 -C /usr/share/themes
+
+Thereafter Bipedal should appear in your preferred theme selector dialogue.
 
 ## Changing Colours
 
